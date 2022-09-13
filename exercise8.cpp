@@ -22,10 +22,10 @@ int main()
             i--;
         }
     }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
     sort(arr, arr + 5);
     cout << arr[0];
 }
