@@ -1,14 +1,16 @@
-#include <iostream>
-#include <algorithm>
-using namespace std;
+//
+// Created by Kienroro on 13/09/2022.
+//
 
-class Matrix
-{
+#ifndef PROJECT_MATRIX_MATRIX_H
+#define PROJECT_MATRIX_MATRIX_H
+
+
+class Matrix {
 private:
     int matrix[100][100];
     int col;
     int row;
-
 public:
     Matrix();
     Matrix(int col, int row);
@@ -36,4 +38,8 @@ public:
     int determinantMatrix();
 
     void inverseMatrix();
+
 };
+
+
+#endif //PROJECT_MATRIX_MATRIX_H

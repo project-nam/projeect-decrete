@@ -1,0 +1,3 @@
+/Users/kienroro2003/Documents/My MacOS/DuyTan/Discrete Math/projeect-decrete/matrix/project-matrix/cmake-build-debug/CMakeFiles/project_matrix.dir
+/Users/kienroro2003/Documents/My MacOS/DuyTan/Discrete Math/projeect-decrete/matrix/project-matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kienroro2003/Documents/My MacOS/DuyTan/Discrete Math/projeect-decrete/matrix/project-matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir

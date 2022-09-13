@@ -53,7 +53,7 @@ bool Matrix::unitMatrix()
             if (matrix[i][i] != 1)
             {
                 return false;
-            }         
+            }
         }
         for (int i = 0; i < this->row; i++)
         {
@@ -68,28 +68,47 @@ bool Matrix::unitMatrix()
         return true;
     }
 }
+
 void Matrix::matrixTransposition()
 {
-    int temp;
-    for (int i = 1; i < this->row; i++)
+    int temp[col][row];
+    for (int i = 0; i < this->col; i++)
     {
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < this->row; j++)
         {
-            temp = matrix[i][j];
-            matrix[i][j] = matrix[j][i];
-            matrix[j][i] = temp;
+            temp[i][j] = matrix[j][i];
         }
     }
-    outputMatrix();
-}
-void Matrix::output(int matrix[100][100], int col, int row)
-{
-    for (int i = 0; i < this->row; i++)
+    for (int i = 0; i < col; i++)
     {
-        for (int j = 0; j < this->col; j++)
+        for (int j = 0; j < row; j++)
         {
-            cout << this->matrix[i][j] << "\t";
+            cout << temp[i][j] << "\t";
         }
         cout << endl;
     }
+}
+
+void Matrix::countMatrix()
+{
+   
+}
+void Matrix::sortMatrixAsc()
+{
+    for (int i = 0; i < this->row; i++)
+    {
+        for (int j = 0; j < this->col-1; j++)
+        {
+            for (int k = this->col-1; k > j; k++)
+            {
+                if (matrix[i][j] < matrix[i][j - 1])
+                {
+                    int temp = matrix[i][j];
+                    matrix[i][j] = matrix[i][j-1];
+                    matrix[i][j-1] = temp;
+                }
+            }
+        }
+    }
+    outputMatrix();
 }
