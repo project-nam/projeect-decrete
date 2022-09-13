@@ -26,7 +26,7 @@ void Matrix::inputMatrix(){
 void Matrix::outputMatrix(){
     for(int i = 0; i < this->row;i++){
         for(int j = 0; j < this->col;j++){
-            cout << this->matrix[i][j] << "\t"
+            cout << this->matrix[i][j] << "\t";
         }
         cout << endl;
     }
