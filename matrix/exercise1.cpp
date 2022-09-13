@@ -2,6 +2,16 @@
 //#include <vector>
 using namespace std;
 
+void input(int arr[][], int n, int m)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
+}
 void output(int arr[][], int n, int m)
 {
     for (int i = 0; i < n; i++)
@@ -16,13 +26,7 @@ int main()
 {
     int n = 2, m = 3;
     int arr[2][3];
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            cin >> arr[i][j];
-        }
-    }
-    
+    input(arr, n, m);
+    output(arr, n, m);
     return 0;
 }
