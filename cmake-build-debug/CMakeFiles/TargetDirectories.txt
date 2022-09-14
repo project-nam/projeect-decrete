@@ -1,0 +1,3 @@
+D:/Workspace/projeect-decrete/cmake-build-debug/CMakeFiles/projeect_decrete.dir
+D:/Workspace/projeect-decrete/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Workspace/projeect-decrete/cmake-build-debug/CMakeFiles/rebuild_cache.dir
